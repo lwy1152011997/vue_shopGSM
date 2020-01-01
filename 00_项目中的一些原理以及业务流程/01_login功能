@@ -1,0 +1,30 @@
+### 如何配置VScode中的vue格式化文件?
+创建 .prettierrc文件,写入
+{
+  "semi": false, // 结尾分号不加
+  "singleQuote": true // 双引号都变为单引号
+}
+
+### 如果要改变ESlint的语法检规则,可以在.eslintrc中进行修改 在rules中进行配置 'space-before-function-paren': 0 忽略方法后面的空格
+
+### elementUI中的按需导入组件的配置: 官网上有完整的配置方法
+
+
+在master分支上创建一个login分支
+git checkout -b login （创建并切换到login分支）
+git branch (查看所有分支)
+
+ 需求: 
+ 对登录表单进行验证 elementUI提供
+
+ 点击reeset重置表单的初始状态
+
+ 点击登录之后,需要对输入的用户名和密码进行预验证,通过验证之后才通过请求发送给后台进行验证
+
+ 登录后跳转到后台管理的首页HOME
+ (只有在登录的状态下才能看到home主页的内容,没有登录时不允许被看到的,如果sessionStroage中存了token那么说明处于登录状态)
+
+ 通过路由导航守卫来控制登录后的访问权限(如果用户没有通过登录直接通过URL的方式访问特定的页面,那么我们要给他重定向到登录的页面上)
+
+退出登录功能.基于token的话,我么你只需要删除sessionStroage中的token就可以了,
+
