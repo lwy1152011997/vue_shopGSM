@@ -10,8 +10,8 @@
 ### elementUI中的按需导入组件的配置: 官网上有完整的配置方法
 
 
-在master分支上创建一个login分支
-git checkout -b login （创建并切换到login分支）
+在master分支上创建一个dev分支
+git checkout -b dev （创建并切换到login分支）
 git branch (查看所有分支)
 
  需求: 
